@@ -10,12 +10,21 @@ class Navigation_Drawer extends StatefulWidget {
 class _NavigationDrawerState extends State<Navigation_Drawer> with SingleTickerProviderStateMixin {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return Drawer (
+      child: ListView.builder(itemBuilder: (context,position){
+        return ListTile(
+          title: Title(title: titleDrawer[position],),
+        );
+      },itemCount: titleDrawer.length,
+      ),
     );
   }
+
+  List <String> titleDrawer = [
+    "Ahmed" , "Gamal" , "Mohamed" , "Esmail" , "Swailam" , "Sadany"
+  ];
 }
