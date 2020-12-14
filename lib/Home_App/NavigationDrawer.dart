@@ -25,6 +25,6 @@ class _NavigationDrawerState extends State<Navigation_Drawer> with SingleTickerP
   }
 
   List <String> titleDrawer = [
-    "Ahmed" , "Gamal" , "Mohamed" , "Barcelona" , "Swailam" , "Sadany"
+    "Ahmed" , "Gamal" , "Mohamed" , "Zamalek" , "Swailam" , "Sadany"
   ];
 }
